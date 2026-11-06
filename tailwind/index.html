@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Atividade de componentes responsivos desenvolvida com Tailwind CSS (abordagem utility-first).">
     <title>Atividade Tailwind CSS</title>
-
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Tailwind CSS via CDN (Play CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-800">
@@ -21,10 +18,8 @@
         <nav class="sticky top-0 z-40 bg-gray-800 text-white shadow" aria-label="Menu principal de navegação">
             <div class="mx-auto max-w-6xl px-4">
                 <div class="flex h-14 items-center justify-between">
-                    <!-- Logo / título do site -->
                     <a href="#inicio" class="font-bold text-lg">Atividade</a>
 
-                    <!-- Botão hamburger (aparece só abaixo de lg) -->
                     <button
                         id="btnMenu"
                         type="button"
@@ -37,7 +32,6 @@
                         </svg>
                     </button>
 
-                    <!-- Menu horizontal (desktop) -->
                     <ul class="hidden lg:flex lg:items-center lg:gap-6">
                         <li><a href="#carrossel" class="font-medium hover:text-gray-300">Carrossel</a></li>
                         <li><a href="#cards" class="text-gray-300 hover:text-white">Cards</a></li>
@@ -47,7 +41,7 @@
                     </ul>
                 </div>
 
-                <!-- Menu colapsável (mobile) -->
+
                 <ul id="menuPrincipal" class="hidden flex-col gap-1 pb-3 lg:hidden">
                     <li><a href="#carrossel" class="block rounded px-2 py-2 font-medium hover:bg-gray-700">Carrossel</a></li>
                     <li><a href="#cards" class="block rounded px-2 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Cards</a></li>
@@ -68,11 +62,11 @@
             <div class="mx-auto max-w-6xl px-4">
                 <h2 class="mb-6 text-center text-2xl font-semibold">Carrossel</h2>
 
-                <!-- Container do carrossel (data-carousel controla o JS) -->
+            
                 <div data-carousel class="relative overflow-hidden rounded-lg shadow">
-                    <!-- Trilho dos slides -->
+               
                     <div data-carousel-track class="flex transition-transform duration-500 ease-in-out">
-                        <!-- Slide 1 -->
+                      
                         <div class="relative w-full flex-shrink-0">
                             <img src="https://picsum.photos/id/180/1200/450" class="block h-72 w-full object-cover md:h-96" alt="Ambiente de trabalho com computadores">
                             <div class="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-black/60 to-transparent p-6 text-center text-white md:block">
@@ -80,7 +74,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
-                        <!-- Slide 2 -->
+                     
                         <div class="relative w-full flex-shrink-0">
                             <img src="https://picsum.photos/id/0/1200/450" class="block h-72 w-full object-cover md:h-96" alt="Notebook sobre uma mesa">
                             <div class="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-black/60 to-transparent p-6 text-center text-white md:block">
@@ -88,7 +82,7 @@
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl.</p>
                             </div>
                         </div>
-                        <!-- Slide 3 -->
+                        
                         <div class="relative w-full flex-shrink-0">
                             <img src="https://picsum.photos/id/48/1200/450" class="block h-72 w-full object-cover md:h-96" alt="Espaço de escritório moderno">
                             <div class="absolute inset-x-0 bottom-0 hidden bg-gradient-to-t from-black/60 to-transparent p-6 text-center text-white md:block">
@@ -98,7 +92,7 @@
                         </div>
                     </div>
 
-                    <!-- Botão anterior -->
+                   
                     <button data-carousel-prev type="button"
                         class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-white/80 hover:text-white focus:outline-none"
                         aria-label="Anterior">
@@ -109,7 +103,7 @@
                         </span>
                     </button>
 
-                    <!-- Botão próximo -->
+                   
                     <button data-carousel-next type="button"
                         class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-white/80 hover:text-white focus:outline-none"
                         aria-label="Próximo">
@@ -120,7 +114,7 @@
                         </span>
                     </button>
 
-                    <!-- Indicadores (dots) -->
+                
                     <div data-carousel-dots class="absolute inset-x-0 bottom-3 flex justify-center gap-2"></div>
                 </div>
             </div>
@@ -133,9 +127,9 @@
             <div class="mx-auto max-w-6xl px-4">
                 <h2 class="mb-6 text-center text-2xl font-semibold">Cards</h2>
 
-                <!-- Grid responsivo: 1 coluna (mobile) -> 2 (md) -> 3 (lg) -->
+                
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Card 1 -->
+                    
                     <article class="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm">
                         <img src="https://picsum.photos/id/1011/600/350" class="h-48 w-full object-cover" alt="Equipe trabalhando em projeto">
                         <div class="flex flex-1 flex-col p-5">
@@ -144,7 +138,6 @@
                         </div>
                     </article>
 
-                    <!-- Card 2 -->
                     <article class="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm">
                         <img src="https://picsum.photos/id/1005/600/350" class="h-48 w-full object-cover" alt="Pessoa programando">
                         <div class="flex flex-1 flex-col p-5">
@@ -153,7 +146,7 @@
                         </div>
                     </article>
 
-                    <!-- Card 3 -->
+                  
                     <article class="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm">
                         <img src="https://picsum.photos/id/1015/600/350" class="h-48 w-full object-cover" alt="Reunião de planejamento">
                         <div class="flex flex-1 flex-col p-5">
@@ -172,7 +165,7 @@
             <div class="mx-auto max-w-6xl px-4">
                 <h2 class="mb-6 text-center text-2xl font-semibold">Tabela</h2>
 
-                <!-- overflow-x-auto garante scroll horizontal no mobile -->
+               
                 <div class="overflow-x-auto rounded-lg shadow-sm">
                     <table class="min-w-full text-left text-sm">
                         <thead class="bg-gray-800 text-white">
@@ -184,7 +177,7 @@
                                 <th scope="col" class="px-4 py-3">Status</th>
                             </tr>
                         </thead>
-                        <!-- odd:bg-white / even:bg-gray-100 replica o efeito "striped" -->
+                        
                         <tbody class="[&>tr:nth-child(odd)]:bg-white [&>tr:nth-child(even)]:bg-gray-100">
                             <tr class="hover:bg-gray-200">
                                 <th scope="row" class="px-4 py-3 font-medium">1</th>
@@ -305,21 +298,20 @@
                 <h2 class="mb-4 text-2xl font-semibold">Modal</h2>
                 <p class="mb-6">Clique no botão abaixo para abrir a janela de diálogo.</p>
 
-                <!-- Botão que abre o modal -->
                 <button data-modal-open="modalExemplo" type="button"
                     class="rounded bg-blue-600 px-6 py-3 text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Abrir Modal
                 </button>
             </div>
 
-            <!-- Estrutura do modal (overlay + caixa). Começa escondido. -->
+           
             <div id="modalExemplo" data-modal
                 class="fixed inset-0 z-50 hidden items-center justify-center p-4"
                 role="dialog" aria-modal="true" aria-labelledby="modalExemploLabel">
-                <!-- Overlay semi-transparente (fecha ao clicar fora) -->
+             
                 <div data-modal-overlay class="absolute inset-0 bg-black/50"></div>
 
-                <!-- Conteúdo -->
+            
                 <div class="relative w-full max-w-md overflow-hidden rounded-lg bg-white text-left shadow-xl">
                     <div class="flex items-center justify-between border-b px-5 py-3">
                         <h3 id="modalExemploLabel" class="text-lg font-semibold">Confirmação</h3>
@@ -342,7 +334,6 @@
 
     </main>
 
-    <!-- Rodapé -->
     <footer class="flex items-center justify-center bg-gray-800 py-3 text-center text-white">
         <span>Davi Fernandes Neves Costa</span>
     </footer>

@@ -1,8 +1,3 @@
-// ============================================================
-// Validação de formulário (Bootstrap 5 + validação HTML5 nativa)
-// ============================================================
-// Impede o envio quando há campos inválidos e aplica os estilos
-// de feedback visual do Bootstrap (.was-validated).
 (function () {
     'use strict';
 

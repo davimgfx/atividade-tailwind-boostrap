@@ -1,9 +1,3 @@
-// ============================================================
-// Interatividade da versão Tailwind (JavaScript nativo)
-// ------------------------------------------------------------
-// O Tailwind fornece apenas classes CSS utilitárias; toda a
-// lógica dos componentes interativos é implementada aqui.
-// ============================================================
 (function () {
     'use strict';
 
